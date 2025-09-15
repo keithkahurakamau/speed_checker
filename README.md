@@ -10,4 +10,3 @@ A Python program that checks car speed against a 70 km/h limit.
 ## Project Structure
 - check_speed.py → main logic
 - main.py → input/output script
-- test_speed.py → unit tests
