@@ -1,9 +1,10 @@
 def calculate_demerit_points(speed):
     speed_limit = 70
-    points_per_km = 5
-    if (speed <=speed_limit):
-     print("Ok")
-
+    if speed < speed_limit:
+        return "Ok"
     else:
-       #calculate the demerit points
-       demerit_points = (speed - speed_limit) // points_per_km
+        points = (speed - speed_limit) // 5
+        if points > 12:
+            return "License suspended"
+        else:
+            return f"Points: {int(points)}"
