@@ -1,16 +1,10 @@
+from demerit_points import calculate_demerit_points
+
 def check_speed():
     #get speed from user
     speed = float(input("Enter your speed in km/h: "))
-    
-    #check if speed is within limit
-    if speed < 70:
-        return "Ok"
-    else:
-        points = (speed - 70) // 5
-        if points > 12:
-            return "License suspended"
-        else:
-            return f"Points: {int(points)}"
+
+    return calculate_demerit_points(speed)
     
     
 def main():

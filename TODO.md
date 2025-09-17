@@ -1,0 +1,3 @@
+- [ ] Update demerit_points.py to complete the calculate_demerit_points function to return the appropriate message based on speed.
+- [ ] Update check_speed.py to import and use the calculate_demerit_points function, removing the existing logic.
+- [ ] Test the program to ensure it works correctly.
